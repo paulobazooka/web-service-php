@@ -1,6 +1,6 @@
 <?php 
-    include_once "model/solicitacao-class.php";
-    include_once "model/usuario-class.php";
+    include_once "model/Solicitacao.php";
+    include_once "model/Usuario.php";
 ?>
 
 <?php 
