@@ -9,10 +9,10 @@
 class Conexao extends PDO
 {
 
-    private $host = "localhost";
-    private $dbname = "db_olharcidadao";
-    private $user = "postgres";
-    private $password = "postgres";
+    private $host = "ec2-54-225-92-1.compute-1.amazonaws.com";
+    private $dbname = "ddcg5gtojtuh3l";
+    private $user = "upmouvifqxmomz";
+    private $password = "f44c4be926490c043483cd136e783fc6c80c486fce746223b16b39163e415785";
     private $port = "5432";
     private $dsn = "";
     private static $db = null;
