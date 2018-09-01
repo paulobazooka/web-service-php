@@ -2,13 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b256c6-691a-42f5-9622-e8147ee107c8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/conexao/Conexao.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/repositories/UsuarioDao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/repositories/SolicitacaoDao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/solicitacao.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conexao/Conexao.php" beforeDir="false" afterPath="$PROJECT_DIR$/conexao/Conexao.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/solicitacao-class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Solicitacao.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/usuario-class.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Usuario.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/model/Solicitacao.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Solicitacao.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -16,43 +17,72 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="db_olharcidadao@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="FUSProjectUsageTrigger">
     <session id="438216672">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="3" />
+          <entry key="project.closed" value="8" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.18" value="1" />
           <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.4" value="1" />
           <entry key="project.open.time.42" value="1" />
-          <entry key="project.opened" value="4" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.51" value="1" />
+          <entry key="project.opened" value="9" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="15" />
+          <entry key="php" value="23" />
+          <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="15" />
+          <entry key="PHP" value="23" />
+          <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="dummy" value="4" />
-          <entry key="php" value="2206" />
+          <entry key="dummy" value="5" />
+          <entry key="php" value="4136" />
+          <entry key="sql" value="20" />
+          <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="2206" />
-          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="PHP" value="4136" />
+          <entry key="PLAIN_TEXT" value="20" />
+          <entry key="Scratch" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.php.new.class">
         <counts>
-          <entry key="PHP Class.type" value="3" />
+          <entry key="PHP Class.type" value="4" />
         </counts>
       </usages-collector>
     </session>
@@ -62,8 +92,17 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/conexao/Conexao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+            <state relative-caret-position="319">
+              <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/index.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
             </state>
           </provider>
         </entry>
@@ -79,8 +118,14 @@
         <option value="$PROJECT_DIR$/model/usuario-class.php" />
         <option value="$PROJECT_DIR$/model/solicitacao-class.php" />
         <option value="$PROJECT_DIR$/conexao/Conexao-class.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/repositories/UsuarioDao.php" />
+        <option value="$APPLICATION_CONFIG_DIR$/consoles/db/774107b0-3172-4537-9f04-362332962d5e/console.sql" />
+        <option value="$PROJECT_DIR$/repositories/solicitacao.php" />
+        <option value="$PROJECT_DIR$/usuario.php" />
+        <option value="$PROJECT_DIR$/repositories/SolcitacaoDao.php" />
+        <option value="$PROJECT_DIR$/model/Solicitacao.php" />
+        <option value="$PROJECT_DIR$/repositories/SolicitacaoDao.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/conexao/Conexao.php" />
       </list>
     </option>
@@ -106,6 +151,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -118,21 +164,21 @@
               <item name="Projeto PHP" type="462c0819:PsiDirectoryNode" />
               <item name="conexao" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="Projeto PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -170,7 +216,12 @@
       <workItem from="1534549731255" duration="769000" />
       <workItem from="1534550670219" duration="17000" />
       <workItem from="1534550872830" duration="24000" />
-      <workItem from="1534942693555" duration="5513000" />
+      <workItem from="1534942693555" duration="5727000" />
+      <workItem from="1535113549224" duration="3984000" />
+      <workItem from="1535150220843" duration="593000" />
+      <workItem from="1535504461637" duration="19000" />
+      <workItem from="1535634936891" duration="2924000" />
+      <workItem from="1535793360965" duration="2392000" />
     </task>
     <servers />
   </component>
@@ -178,33 +229,42 @@
     <history-entry file="Projeto_PHP - 2018.08.17 at 21h 00m 34s.xml">
       <configuration name="Projeto PHP" configurationId="PHPUnitRunConfigurationType" />
     </history-entry>
+    <history-entry file="Projeto_PHP - 2018.08.30 at 10h 17m 27s.xml">
+      <configuration name="Projeto PHP" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Projeto_PHP - 2018.08.30 at 10h 17m 51s.xml">
+      <configuration name="Projeto PHP" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Projeto_PHP - 2018.08.30 at 10h 18m 12s.xml">
+      <configuration name="Projeto PHP" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6323000" />
+    <option name="totallyTimeSpent" value="16449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="749" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25681818" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2780303" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32956383" />
+      <window_info active="true" anchor="bottom" id="Find" order="1" visible="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Run" order="2" weight="0.32956383" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Database Changes" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32956383" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" visible="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32954547" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -214,16 +274,7 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/conexao/Conexao-class.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/conexao/Conexao-class.php" />
     <entry file="file://$PROJECT_DIR$/model/Usuario.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -231,24 +282,53 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/model/Solicitacao.php">
+    <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/774107b0-3172-4537-9f04-362332962d5e/console.sql" />
+    <entry file="file://$PROJECT_DIR$/solicitacao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-15">
-          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+        <state relative-caret-position="318">
+          <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/repositories/UsuarioDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="72" selection-start-line="7" selection-start-column="72" selection-end-line="7" selection-end-column="72" />
+        <state relative-caret-position="255">
+          <caret line="38" column="41" lean-forward="true" selection-start-line="34" selection-start-column="6" selection-end-line="38" selection-end-column="41" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repositories/SolicitacaoDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/Solicitacao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1050">
+          <caret line="70" column="28" selection-start-line="70" selection-start-column="28" selection-end-line="70" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="22" column="28" selection-start-line="22" selection-start-column="28" selection-end-line="22" selection-end-column="28" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/conexao/Conexao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="11" column="7" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+        <state relative-caret-position="319">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="24" selection-end-line="42" selection-end-column="24" />
         </state>
       </provider>
     </entry>

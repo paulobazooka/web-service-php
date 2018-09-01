@@ -6,37 +6,44 @@
  * Time: 10:05
  */
 
-class Conexao
+class Conexao extends PDO
 {
-    private $host = "localhost:3306";
-    // private $port = "3306";
-    private $database = "DB_DSW";
-    private $user = "root";
-    private $pass = "1q2w3e";
+
+    private $host = "localhost";
+    private $dbname = "db_olharcidadao";
+    private $user = "postgres";
+    private $password = "postgres";
+    private $port = "5432";
+    private $dsn = "";
+    private static $db = null;
+
 
 
     /**
-     * @return mysqli|null  returna um conexão com o banco de dados
+     * Conexao constructor.
      */
-    public function getConnection(){
-
-        // Cria a conexão
-        $conn = new mysqli($this->host, $this->user, $this->pass, $this->database);
-
-        // Verifica a  connection
-        if ($conn->connect_error) {
-            die("Connection failed: " . $conn->connect_error);
-            return null;
-        }
-
-        return $conn;
+    public function __construct()
+    {
     }
 
-    /**
-     *  Encerra a conexão com o banco de dados
-     */
-    public function closeConnection(){
 
-        $this->conn->close();
+    /**
+     * @return null|PDO
+     */
+    public function getConexao()
+    {
+        $this->dsn = ("pgsql:host=$this->host;dbname=$this->dbname;user=$this->user;port=$this->port;password=$this->password");
+        $this->db = new PDO($this->dsn);
+
+        return $this->db;
+    }
+
+
+    /**
+     *  Close connection
+     */
+    public function closeConexao()
+    {
+        $this->db = null;
     }
 }

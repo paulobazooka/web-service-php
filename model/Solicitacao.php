@@ -68,7 +68,7 @@
             $this->comentario = $com;
         }
 
-        public function getSolucionado(){
+            public function getSolucionado(){
             return $this->foisolucionado;
         }
 
