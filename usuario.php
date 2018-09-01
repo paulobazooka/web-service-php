@@ -6,13 +6,21 @@
  * Time: 10:40
  */
 
+    include_once "model/Usuario.php";
+    include_once "repositories/UsuarioDao.php";
+    include_once "conexao/Conexao.php";
+
+
     if(isset($_GET)){
-        echo "GET usuario <br>";
+        $con = new Conexao();
+        $usuarioDao = new UsuarioDao($con->getConexao());
+
+        return $usuarioDao->usuarioFindAll();
     }
 
 
     if(isset($_POST['*'])){
-        echo "POST usuario <br>";
+
     }
 
 

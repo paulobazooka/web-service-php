@@ -9,7 +9,7 @@
  */
 
 
-include "../model/Usuario.php";
+// include_once "../model/Usuario.php";
 
 
 
@@ -45,14 +45,29 @@ class UsuarioDao
 
     }
 
+
+    public function usuarioFindAll(){
+        $users = [];
+
+        $query = 'SELECT * FROM usuario';
+        $stmt = $this->con->prepare($query);
+        $stmt->execute();
+
+        // recebe todas as linhas da consulta
+        $users = $stmt->fetchAll();
+
+        // retorna arquivo Json encodificado para UTF-8
+        echo json_encode($users,JSON_UNESCAPED_UNICODE);
+    }
+
+
+
     /**
      * @param $user Recebe como parametro um objeto do tipo usuario para GRAVAR no banco de dados
      * @return bool retorna boleano se a operação foi bem sucedida
      */
 
     public function usuarioSave($user){
-
-        $this->returnIdForInsertion();
 
         try {
             $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);

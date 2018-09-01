@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b256c6-691a-42f5-9622-e8147ee107c8" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/repositories/UsuarioDao.php" beforeDir="false" afterPath="$PROJECT_DIR$/repositories/UsuarioDao.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/usuario.php" beforeDir="false" afterPath="$PROJECT_DIR$/usuario.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -49,27 +49,27 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="php" value="29" />
+          <entry key="php" value="30" />
           <entry key="sql" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="PHP" value="29" />
+          <entry key="PHP" value="30" />
           <entry key="Scratch" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="php" value="5285" />
+          <entry key="php" value="6019" />
           <entry key="sql" value="20" />
           <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="5285" />
+          <entry key="PHP" value="6019" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="Scratch" value="20" />
         </counts>
@@ -83,7 +83,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="195">
@@ -92,14 +92,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/repositories/UsuarioDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="258">
-              <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-              <folding>
-                <element signature="e#6#165#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="63">
+              <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/usuario.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
             </state>
           </provider>
         </entry>
@@ -117,13 +123,13 @@
         <option value="$PROJECT_DIR$/conexao/Conexao-class.php" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/774107b0-3172-4537-9f04-362332962d5e/console.sql" />
         <option value="$PROJECT_DIR$/repositories/solicitacao.php" />
-        <option value="$PROJECT_DIR$/usuario.php" />
         <option value="$PROJECT_DIR$/repositories/SolcitacaoDao.php" />
         <option value="$PROJECT_DIR$/model/Solicitacao.php" />
         <option value="$PROJECT_DIR$/repositories/SolicitacaoDao.php" />
         <option value="$PROJECT_DIR$/conexao/Conexao.php" />
-        <option value="$PROJECT_DIR$/repositories/UsuarioDao.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/usuario.php" />
+        <option value="$PROJECT_DIR$/repositories/UsuarioDao.php" />
       </list>
     </option>
   </component>
@@ -153,21 +159,6 @@
             <path>
               <item name="Projeto PHP" type="b2602c69:ProjectViewProjectNode" />
               <item name="Projeto PHP" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="conexao" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Projeto PHP" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Projeto PHP" type="462c0819:PsiDirectoryNode" />
-              <item name="repositories" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -226,7 +217,7 @@
       <workItem from="1535150220843" duration="593000" />
       <workItem from="1535504461637" duration="19000" />
       <workItem from="1535634936891" duration="2924000" />
-      <workItem from="1535793360965" duration="9156000" />
+      <workItem from="1535793360965" duration="11867000" />
     </task>
     <servers />
   </component>
@@ -245,7 +236,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23213000" />
+    <option name="totallyTimeSpent" value="25924000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="749" extended-state="6" />
@@ -264,7 +255,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.49924242" visible="true" weight="0.32956383" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.49924242" visible="true" weight="0.32956383" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5007576" side_tool="true" weight="0.32956383" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -285,13 +276,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="318">
           <caret line="29" column="28" selection-start-line="29" selection-start-column="28" selection-end-line="29" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/usuario.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="318">
-          <caret line="29" column="29" selection-start-line="29" selection-start-column="29" selection-end-line="29" selection-end-column="29" />
         </state>
       </provider>
     </entry>
@@ -323,20 +307,24 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/repositories/UsuarioDao.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="258">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding>
-            <element signature="e#6#165#0#PHP" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="24" column="16" selection-start-line="24" selection-start-column="16" selection-end-line="24" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/usuario.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="17" column="45" selection-start-line="17" selection-start-column="45" selection-end-line="17" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/repositories/UsuarioDao.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63">
+          <caret line="50" lean-forward="true" selection-start-line="50" selection-end-line="50" />
         </state>
       </provider>
     </entry>
