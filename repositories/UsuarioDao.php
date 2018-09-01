@@ -8,6 +8,11 @@
  *          Classe responsável por realizar operações de CRUD de usuario
  */
 
+
+include "../model/Usuario.php";
+
+
+
 class UsuarioDao
 {
     /**
@@ -26,17 +31,47 @@ class UsuarioDao
     }
 
 
+
+    private function returnIdForInsertion(){
+
+        $query = 'SELECT MAX(id) as id FROM usuario';
+
+        $stmt = $this->con->prepare($query);
+        $stmt->execute();
+
+        $row = $stmt->fetch();
+
+        return ($row['id'] + 1);
+
+    }
+
     /**
      * @param $user Recebe como parametro um objeto do tipo usuario para GRAVAR no banco de dados
      * @return bool retorna boleano se a operação foi bem sucedida
      */
 
     public function usuarioSave($user){
-        $query = "INSERT INTO usuario (nome, email) values ";
-        $query.= "(".$user->getNome().", ";
-        $query.= $user->getEmail().");";
 
-      return $this->executeQuery($query);
+        $this->returnIdForInsertion();
+
+        try {
+            $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $id = $this->returnIdForInsertion();
+
+            $stmt = $this->con->prepare('INSERT INTO usuario(id, nome, email) VALUES(:_id,:_nome,:_email)');
+            $stmt->execute(array(
+                ':_id' => $id,
+                ':_nome' => $user->getNome(),
+                ':_email' => $user->getEmail()
+            ));
+
+           // echo $stmt->rowCount();
+
+        } catch(PDOException $e) {
+            echo 'Error: ' . $e->getMessage();
+        }
+
     }
 
 
@@ -49,7 +84,7 @@ class UsuarioDao
         $query.= "nome = ".$user->getNome().", ";
         $query.= "email = " .$user->getEmail().";";
 
-        return $this->executeQuery($query);
+        return $this->con->executeQuery($query);
     }
 
     /**
@@ -62,7 +97,7 @@ class UsuarioDao
         $query .= $id;
         $query .= ";";
 
-        return $this->executeQuery($query);
+        return $this->con->executeQuery($query);
     }
 
 
@@ -76,7 +111,7 @@ class UsuarioDao
         $query .= $id;
         $query .= ";";
 
-        return $this->executeQuery($query);
+        return $this->con->executeQuery($query);
 
     }
 

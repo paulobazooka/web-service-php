@@ -2,6 +2,7 @@
     include_once "model/Solicitacao.php";
     include_once "model/Usuario.php";
     include_once "conexao/Conexao.php";
+    include_once "repositories/UsuarioDao.php";
 ?>
 
 <?php 
@@ -18,12 +19,9 @@
         $con = new Conexao();
     }*/
 
-    $conn = new Conexao();
-
-    if($conn->getConexao()){
-        echo "CONECTADO";
-    }else{
-        echo "ERRO";
-    }
+   echo "<h3>Web Service Olhar Cidadão</h3><br>";
+   echo "<label>Autores:</label><br>";
+   echo "<label>Lucas Dias</label><br>";
+   echo "<label>Paulo Sérgio do Nascimento</label><br>";
 
 ?>
