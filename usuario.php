@@ -19,22 +19,24 @@
     }
 
 
-    if(isset($_POST['*'])){
+    if(isset($_POST[''])){
 
+        $user = json_encode($_POST['']);
+        echo $user;
     }
 
 
-    if(isset($_PUT["*"])){
+    if(isset($_PUT["usuario"])){
         echo "PUT usuario <br>";
     }
 
 
-    if(isset($_PATCH["*"])){
+    if(isset($_PATCH["usuario"])){
         echo "PATCH usuario <br>";
     }
 
 
-    if(isset($_DELETE["*"])){
+    if(isset($_DELETE["usuario"])){
         echo "DELETE usuario <br>";
     }
 
