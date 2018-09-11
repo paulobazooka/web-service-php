@@ -53,7 +53,7 @@ class UsuarioDao
         $stmt->execute();
 
         // recebe todas as linhas da consulta
-        $users = $stmt->fetchAll();
+        $users = $stmt->fetchAll(\PDO::FETCH_ASSOC);
 
         // retorna arquivo Json encodificado para UTF-8
         echo json_encode($users,JSON_UNESCAPED_UNICODE);
