@@ -36,4 +36,18 @@ class SolicitacaoDao
         return $this->executeQuery($query);
     }
 
+
+    public function solicitacaoFindAllByUserId($id){
+        $query  = "SELECT * FROM solicitacao ";
+        $query .= "WHERE usuarioid = ". $id;
+
+        $stmt = $this->con->prepare($query);
+        $stmt->execute();
+
+        // recebe todas as linhas da consulta
+        $solicitacoes = $stmt->fetchAll();
+
+        // retorna arquivo Json encodificado para UTF-8
+        echo json_encode($solicitacoes,JSON_UNESCAPED_UNICODE);
+    }
 }

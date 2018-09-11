@@ -6,8 +6,14 @@
  * Time: 10:53
  */
 
-if(isset($_GET)){
-    echo "GET Solictação <br>";
+include_once "conexao/Conexao.php";
+include_once "repositories/SolicitacaoDao.php";
+
+if(isset($_GET['id'])){
+    $con = new Conexao();
+    $solicitacaoDao = new SolicitacaoDao($con->getConexao());
+
+    return $solicitacaoDao->solicitacaoFindAllByUserId($_GET['id']);
 }
 
 

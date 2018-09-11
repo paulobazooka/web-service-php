@@ -47,7 +47,6 @@ class UsuarioDao
 
 
     public function usuarioFindAll(){
-        $users = [];
 
         $query = 'SELECT * FROM usuario';
         $stmt = $this->con->prepare($query);
