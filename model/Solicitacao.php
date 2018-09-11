@@ -9,15 +9,17 @@
         private $tipo;
         private $comentario;
         private $foisolucionado;
+        private $userid;
 
 
-        public function __construct($data, $latitude, $longitude, $tipo, $comentario, $foisolucionado){
+        public function __construct($data, $latitude, $longitude, $tipo, $comentario, $foisolucionado, $userid){
             $this->datasolicitacao = $data;
             $this->latitude = $latitude;
             $this->longitude = $longitude;
             $this->tipo = $tipo;
             $this->comentario = $comentario;
             $this->foisolucionado = $foisolucionado;
+            $this->userid = $userid;
         }
 
         public function getCodigo(){
@@ -68,13 +70,22 @@
             $this->comentario = $com;
         }
 
-            public function getSolucionado(){
+        public function getSolucionado(){
             return $this->foisolucionado;
         }
 
         public function setSolucionado($sol){
             $this->foisolucionado = $sol;
         }
+
+        public function getUserId(){
+            return $this->userid;
+        }
+
+        public function setUserId($userid){
+            $this->userid = $userid;
+        }
+        
 
     }
 ?>

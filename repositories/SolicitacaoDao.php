@@ -24,14 +24,15 @@ class SolicitacaoDao
     }
 
 
-    public function solicitacaoSave($solicitacao){
-        $query  = "INSERT INTO solicitacao (data, latitude, longitude, tipo, comentario, foisolucionado) values ";
+    public function solicitacaoSave(Solicitacao $solicitacao){
+        $query  = "INSERT INTO solicitacao (data, latitude, longitude, tipo, comentario, foisolucionado, userid) values ";
         $query .= "(".$solicitacao->getDatasolicitacao(). ", ";
         $query .= $solicitacao->getLatitude(). ", ";
         $query .= $solicitacao->getLongitude(). ", ";
         $query .= $solicitacao->getTipo(). ", ";
         $query .= $solicitacao->getComentario(). ", ";
-        $query .= $solicitacao->getSolucionado(). ")";
+        $query .= $solicitacao->getSolucionado(). ", ";
+        $query .= $solicitacao->getUserId(). ")";
 
         return $this->con->executeQuery($query);
     }
