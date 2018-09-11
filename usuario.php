@@ -11,7 +11,8 @@
     include_once "conexao/Conexao.php";
 
 
-    if(isset($_GET)){
+    if(isset($_GET['all'])){
+
         $con = new Conexao();
         $usuarioDao = new UsuarioDao($con->getConexao());
 
@@ -19,10 +20,38 @@
     }
 
 
-    if(isset($_POST[''])){
+    if(isset($_POST)){
 
-        $user = json_encode($_POST['']);
-        echo $user;
+        unset($_POST);
+
+        $entityBody = json_decode(file_get_contents('php://input'));
+
+        if($entityBody != null and !empty($entityBody)) {
+
+            $nome  = $entityBody->{"nome"};
+            $email = $entityBody->{"email"};
+            $senha = $entityBody->{"senha"};
+
+            if(($nome != null and !empty($nome)) and ($email != null and !empty($email) and ($senha != null and !empty($senha)))){
+
+                $user = new Usuario($nome, $email, $senha);
+
+                $con = new Conexao();
+
+                $usuarioDao = new UsuarioDao($con->getConexao());
+                $result = $usuarioDao->usuarioSave($user);
+
+                if($result){
+                    echo $result;
+                }else{
+                    echo false;
+                }
+            }
+
+        }
+
+
+
     }
 
 

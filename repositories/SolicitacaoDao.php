@@ -33,7 +33,7 @@ class SolicitacaoDao
         $query .= $solicitacao->getComentario(). ", ";
         $query .= $solicitacao->getSolucionado(). ")";
 
-        return $this->executeQuery($query);
+        return $this->con->executeQuery($query);
     }
 
 

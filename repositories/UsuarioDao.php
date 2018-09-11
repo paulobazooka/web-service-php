@@ -8,10 +8,8 @@
  *          Classe responsável por realizar operações de CRUD de usuario
  */
 
-
-// include_once "../model/Usuario.php";
-
-
+include_once "../model/Usuario.php";
+include_once "../conexao/Conexao.php";
 
 class UsuarioDao
 {
@@ -19,6 +17,8 @@ class UsuarioDao
      * @var recebe uma conexão válida
      */
     private $con;
+
+
 
 
     /**
@@ -32,20 +32,28 @@ class UsuarioDao
 
 
 
+
+
+    /**
+     * @return retorna um numero inteiro resultante da soma do ultimo id + 1
+     */
     private function returnIdForInsertion(){
 
         $query = 'SELECT MAX(id) as id FROM usuario';
 
         $stmt = $this->con->prepare($query);
         $stmt->execute();
-
         $row = $stmt->fetch();
 
         return ($row['id'] + 1);
-
     }
 
 
+
+
+    /**
+     *   lista todos os usuários
+     */
     public function usuarioFindAll(){
 
         $query = 'SELECT * FROM usuario';
@@ -61,32 +69,52 @@ class UsuarioDao
 
 
 
+
+
     /**
      * @param $user Recebe como parametro um objeto do tipo usuario para GRAVAR no banco de dados
      * @return bool retorna boleano se a operação foi bem sucedida
      */
 
-    public function usuarioSave($user){
+    public function usuarioSave(Usuario $user){
 
         try {
             $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
             $id = $this->returnIdForInsertion();
 
-            $stmt = $this->con->prepare('INSERT INTO usuario(id, nome, email) VALUES(:_id,:_nome,:_email)');
-            $stmt->execute(array(
-                ':_id' => $id,
-                ':_nome' => $user->getNome(),
-                ':_email' => $user->getEmail()
-            ));
+                if ($id != null and !empty($id)) {
 
-           // echo $stmt->rowCount();
+                    $sql = "INSERT INTO usuario(id, senha, nome, email) VALUES (:_id,md5(:_senha),:_nome,:_email)";
 
-        } catch(PDOException $e) {
+                    $stmt = $this->con->prepare($sql);
+
+                    try {
+                        $this->con->beginTransaction();
+
+                        $stmt->execute(array(
+                            ':_id' => $id,
+                            ':_nome' => $user->getNome(),
+                            ':_email' => $user->getEmail(),
+                            ':_senha' => $user->getSenha()
+                        ));
+                        $this->con->commit();
+
+                        return true;
+
+                    }catch (PDOException $e){
+                        $this->con->rollback();
+                        echo 'Error: ' . $e->getMessage();
+                    }
+
+                }
+            }
+        catch (PDOException $e) {
             echo 'Error: ' . $e->getMessage();
-        }
-
+            }
     }
+
+
 
 
     /**
@@ -100,6 +128,9 @@ class UsuarioDao
 
         return $this->con->executeQuery($query);
     }
+
+
+
 
     /**
      * @param $id recebe como parametro um id para BUSCAR no banco de dados um usuario
@@ -115,6 +146,26 @@ class UsuarioDao
     }
 
 
+
+
+    /**
+     * @param $email
+     * @return mixed
+     */
+    public function usuarioFindByEmail($email){
+        $query = "SELECT * FROM usuario ";
+        $query .= "WHERE email= ";
+        $query .= $email;
+        $query .= ";";
+
+        return $this->con->executeQuery($query);
+    }
+
+
+
+
+
+
     /**
      * @param $id recebe como parametro um id para REMOVER no banco de dados um usuario
      * @return bool retorna boleano se a operação foi bem sucedida
@@ -128,6 +179,10 @@ class UsuarioDao
         return $this->con->executeQuery($query);
 
     }
+
+
+
+
 
 
     /**

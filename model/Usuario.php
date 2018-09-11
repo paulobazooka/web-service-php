@@ -4,12 +4,14 @@
 
         private $codigo;
         private $nome;
-        private $email;     
+        private $email;
+        private $senha;
 
 
-        function __construct($nom, $em) {
+        function __construct($nom, $em, $se) {
             $this->nome  = $nom;
             $this->email = $em;
+            $this->senha = $se;
         }
 
         /**
@@ -71,6 +73,25 @@
 
                 return $this;
         }
+
+        /**
+         * @return mixed
+         */
+        public function getSenha()
+        {
+            return $this->senha;
+        }
+
+        /**
+         * @param mixed $senha
+         */
+        public function setSenha($senha)
+        {
+            $this->senha = $senha;
+        }
+
+
+
     }
 
 ?>
