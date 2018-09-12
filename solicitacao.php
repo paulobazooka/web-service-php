@@ -34,13 +34,21 @@ if(isset($_PUT["*"])){
 }
 
 
-if(isset($_PATCH["*"])){
+if(isset($_PATCH["id"])){
     echo "PATCH Solictação <br>";
+    $con = new Conexao();
+    $solicitacaoDao = new SolicitacaoDao($con->getConexao());
+
+    return $solicitacaoDao->solicitacaoComplete($_DELETE['id']);   
 }
 
 
-if(isset($_DELETE["*"])){
+if(isset($_DELETE["id"])){
     echo "DELETE Solictação <br>";
+    $con = new Conexao();
+    $solicitacaoDao = new SolicitacaoDao($con->getConexao());
+
+    return $solicitacaoDao->removeSolicitacao($_DELETE['id']);   
 }
 
 ?>

@@ -25,7 +25,7 @@ class SolicitacaoDao
 
 
     public function solicitacaoSave(Solicitacao $solicitacao){
-        $query  = "INSERT INTO solicitacao (data, latitude, longitude, tipo, comentario, foisolucionado, userid) values ";
+        $query  = "INSERT INTO solicitacao (data, latitude, longitude, tipo, comentario, foisolucionado, usuarioid) values ";
         $query .= "(".$solicitacao->getDatasolicitacao(). ", ";
         $query .= $solicitacao->getLatitude(). ", ";
         $query .= $solicitacao->getLongitude(). ", ";
@@ -50,5 +50,20 @@ class SolicitacaoDao
 
         // retorna arquivo Json encodificado para UTF-8
         echo json_encode($solicitacoes,JSON_UNESCAPED_UNICODE);
+    }
+
+    public function solicitacaoComplete($id){
+        $query = "UPDATE solicitacao ";
+        $query .= "SET foisolucionado=1";
+        $query .= "WHERE id=". $id; 
+
+        return $this->con->executeQuery($query);
+    }
+
+    public function removeSolicitacao($id){
+        $query = "DELETE FROM solicitacao ";
+        $query .= "WHERE id=". $id;
+
+        return $this->con->executeQuery($query);
     }
 }
