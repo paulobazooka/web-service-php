@@ -61,7 +61,7 @@ class UsuarioDao
         $stmt->execute();
 
         // recebe todas as linhas da consulta
-        $users = $stmt->fetchAll(\PDO::FETCH_ASSOC);
+        $users = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
         // retorna arquivo Json encodificado para UTF-8
         echo json_encode($users,JSON_UNESCAPED_UNICODE);
@@ -139,10 +139,16 @@ class UsuarioDao
     public function usuarioFind($id){
         $query = "SELECT * FROM usuario ";
         $query .= "WHERE id= ";
-        $query .= $id;
-        $query .= ";";
+        $query .= ":id";
 
-        return $this->con->executeQuery($query);
+        $stmt = $this->con->prepare($query);
+        $stmt->bindParam(":id", $id);
+
+        $stmt->execute();
+
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        echo (json_encode($result,  JSON_UNESCAPED_UNICODE));
     }
 
 
@@ -153,12 +159,18 @@ class UsuarioDao
      * @return mixed
      */
     public function usuarioFindByEmail($email){
-        $query = "SELECT * FROM usuario ";
-        $query .= "WHERE email= ";
-        $query .= $email;
-        $query .= ";";
+        $query  = "SELECT * FROM usuario ";
+        $query .= "WHERE email = ";
+        $query .= ":param";
 
-        return $this->con->executeQuery($query);
+        $stmt = $this->con->prepare($query);
+        $stmt->bindParam(":param", $email);
+
+        $stmt->execute();
+
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+        echo(json_encode($result));
     }
 
 

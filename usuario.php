@@ -20,7 +20,27 @@
     }
 
 
-    if(isset($_POST)){
+    if(isset($_GET['email'])){
+
+        $email = $_GET['email'];
+        $con = new Conexao();
+        $usuarioDao = new UsuarioDao($con->getConexao());
+
+        return $usuarioDao->usuarioFindByEmail($email);
+    }
+
+
+    if(isset($_GET['id'])){
+        $id = $_GET['id'];
+        $con = new Conexao();
+        $usuarioDao = new UsuarioDao($con->getConexao());
+
+        return $usuarioDao->usuarioFind($id);
+    }
+
+
+
+if(isset($_POST)){
 
         unset($_POST);
 

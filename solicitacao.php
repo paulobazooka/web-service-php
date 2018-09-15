@@ -22,7 +22,6 @@ if(isset($_POST['*'])){
     echo "POST Solictação <br>";
     $con = new Conexao();
     $solicitacaoDao = new SolicitacaoDao($con->getConexao());
-
     $solicitacaoData = new Solicitacao($_POST['data'],$_POST['latitude'], $_POST['longitude'], $_POST['tipo'], $_POST['comentario'], $_POST['foisolucionado'], $_POST['userid']);
 
     return $solicitacaoDao->solicitacaoSave($solicitacaoData);
