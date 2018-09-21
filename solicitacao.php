@@ -18,7 +18,7 @@ if(isset($_GET['id'])){
 }
 
 
-if(isset($_POST['*'])){
+if(isset($_POST['tipo'])){
     echo "POST Solictação <br>";
     $con = new Conexao();
     $solicitacaoDao = new SolicitacaoDao($con->getConexao());
