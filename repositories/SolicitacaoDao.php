@@ -6,6 +6,7 @@
  * Time: 10:55
  */
 
+
 class SolicitacaoDao
 {
     /**
@@ -24,17 +25,65 @@ class SolicitacaoDao
     }
 
 
-    public function solicitacaoSave(Solicitacao $solicitacao){
-        $query  = "INSERT INTO solicitacao (data, latitude, longitude, tipo, comentario, foisolucionado, usuarioid) values ";
-        $query .= "(".$solicitacao->getDatasolicitacao(). ", ";
-        $query .= $solicitacao->getLatitude(). ", ";
-        $query .= $solicitacao->getLongitude(). ", ";
-        $query .= $solicitacao->getTipo(). ", ";
-        $query .= $solicitacao->getComentario(). ", ";
-        $query .= $solicitacao->getSolucionado(). ", ";
-        $query .= $solicitacao->getUserId(). ")";
+    /**
+     * @return retorna um numero inteiro resultante da soma do ultimo id + 1
+     */
+    private function returnIdForInsertion(){
 
-        return $this->con->executeQuery($query);
+        $query = 'SELECT MAX(id) as id FROM solicitacao';
+
+        $stmt = $this->con->prepare($query);
+        $stmt->execute();
+        $row = $stmt->fetch();
+
+        return ($row['id'] + 1);
+    }
+
+
+    public function solicitacaoSave(Solicitacao $solicitacao){
+
+        try {
+            $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+            $id = $this->returnIdForInsertion();
+
+            if ($id != null and !empty($id)) {
+
+                $sql = "INSERT INTO solicitacao (id, datasolicitacao, latitude, longitude, tipo, comentario, foisolucionado, usuarioid) values (:_id, :_datasolicitacao, :_latitude, :_longitude, :_tipo, :_comentario, :_foisolucionado, :_usuarioid)";
+
+                $stmt = $this->con->prepare($sql);
+
+                try {
+                    $this->con->beginTransaction();
+
+                    $stmt->execute(array(
+                        ':_id' => $id,
+                        ':_datasolicitacao' => $solicitacao->getDatasolicitacao(),
+                        ':_latitude' => $solicitacao->getLatitude(),
+                        ':_longitude' => $solicitacao->getLongitude(),
+                        ':_tipo'  => $solicitacao->getTipo(),
+                        ':_comentario' => $solicitacao->getComentario(),
+                        ':_foisolucionado'  => $solicitacao->getSolucionado(),
+                        ':_usuarioid'  => $solicitacao->getUserId()
+                    ));
+
+                    $this->con->commit();
+
+                    return json_encode("solicitação","inserida");
+
+                }catch (PDOException $e){
+                    $this->con->rollback();
+                    echo 'Error: ' . $e->getMessage();
+                }
+
+            }else{
+                return json_encode("Erro!","Não foi possiel inserir");
+            }
+        }
+        catch (PDOException $e) {
+            return json_encode("Erro!",$e);
+        }
+
     }
 
 

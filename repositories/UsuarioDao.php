@@ -56,6 +56,11 @@ class UsuarioDao
      */
     public function usuarioFindAll(){
 
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
+
+
         $query = 'SELECT * FROM usuario';
         $stmt = $this->con->prepare($query);
         $stmt->execute();
@@ -77,6 +82,10 @@ class UsuarioDao
      */
 
     public function usuarioSave(Usuario $user){
+
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
 
         try {
             $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -122,6 +131,12 @@ class UsuarioDao
      * @return bool retorna boleano se a operação foi bem sucedida
      */
     public function usuarioUpdate($user){
+
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
+
+
         $query = "UPDATE usuario SET ";
         $query.= "nome = ".$user->getNome().", ";
         $query.= "email = " .$user->getEmail().";";
@@ -137,6 +152,12 @@ class UsuarioDao
      * @return bool retorna boleano se a operação foi bem sucedida
      */
     public function usuarioFind($id){
+
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
+
+
         $query = "SELECT * FROM usuario ";
         $query .= "WHERE id= ";
         $query .= ":id";
@@ -159,6 +180,12 @@ class UsuarioDao
      * @return mixed
      */
     public function usuarioFindByEmail($email){
+
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
+
+
         $query  = "SELECT * FROM usuario ";
         $query .= "WHERE email = ";
         $query .= ":param";
@@ -183,6 +210,11 @@ class UsuarioDao
      * @return bool retorna boleano se a operação foi bem sucedida
      */
     public function usuarioDelete($id){
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
+
+
         $query = "DELETE FROM usuario ";
         $query .= "WHERE id= ";
         $query .= $id;

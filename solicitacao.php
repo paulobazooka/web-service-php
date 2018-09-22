@@ -10,6 +10,11 @@ include_once "model/Solicitacao.php";
 include_once "conexao/Conexao.php";
 include_once "repositories/SolicitacaoDao.php";
 
+
+header("Access-Control-Allow-Origin: *");
+header('Cache-Control: no-cache, must-revalidate');
+header("Content-Type: text/plain; charset=UTF-8");
+
 if(isset($_GET['id'])){
     $con = new Conexao();
     $solicitacaoDao = new SolicitacaoDao($con->getConexao());
@@ -18,13 +23,16 @@ if(isset($_GET['id'])){
 }
 
 
-if(isset($_POST['tipo'])){
-    echo "POST Solictação <br>";
-    $con = new Conexao();
-    $solicitacaoDao = new SolicitacaoDao($con->getConexao());
-    $solicitacaoData = new Solicitacao($_POST['data'],$_POST['latitude'], $_POST['longitude'], $_POST['tipo'], $_POST['comentario'], $_POST['foisolucionado'], $_POST['userid']);
+if(file_get_contents("php://input")){
 
-    return $solicitacaoDao->solicitacaoSave($solicitacaoData);
+    header("HTTP/1.1 200 OK");
+
+    $dados = file_get_contents("php://input");
+    $sol = json_decode($dados);
+
+    $solicitacao = new Solicitacao($sol->datasolicitacao, $sol->latitude, $sol->longitude, $sol->tipo, $sol->comentario, $sol->foisolucionado, $sol->usuarioid);
+
+    echo $solicitacaoDao->solicitacaoSave($solicitacao);
 }
 
 

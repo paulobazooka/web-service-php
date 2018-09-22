@@ -10,6 +10,7 @@
         private $comentario;
         private $foisolucionado;
         private $userid;
+        private $imagem;
 
 
         public function __construct($data, $latitude, $longitude, $tipo, $comentario, $foisolucionado, $userid){
@@ -85,7 +86,40 @@
         public function setUserId($userid){
             $this->userid = $userid;
         }
-        
+
+        /**
+         * @return mixed
+         */
+        public function getFoisolucionado()
+        {
+            return $this->foisolucionado;
+        }
+
+        /**
+         * @param mixed $foisolucionado
+         */
+        public function setFoisolucionado($foisolucionado)
+        {
+            $this->foisolucionado = $foisolucionado;
+        }
+
+        /**
+         * @return mixed
+         */
+        public function getImagem()
+        {
+            return $this->imagem;
+        }
+
+        /**
+         * @param mixed $imagem
+         */
+        public function setImagem($imagem)
+        {
+            $this->imagem = $imagem;
+        }
+
+
 
     }
 ?>
