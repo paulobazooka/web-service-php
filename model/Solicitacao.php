@@ -23,20 +23,29 @@
             $this->userid = $userid;
         }
 
+        /**
+         * @return mixed
+         */
+        public function getDatasolicitacao()
+        {
+            return $this->datasolicitacao;
+        }
+
+        /**
+         * @param mixed $datasolicitacao
+         */
+        public function setDatasolicitacao($datasolicitacao)
+        {
+            $this->datasolicitacao = $datasolicitacao;
+        }
+
+
         public function getCodigo(){
             return $this->codigo;
         }
 
         public function setCodigo($cod){
             $this->codigo = $cod;
-        }
-
-        public function getDatasolicitacao(){
-            return $this->datasolicitacao;
-        }
-
-        public function setDatasolicitacao($dt){
-            $this->datasolicitacao = $dt;
         }
 
         public function getLatitude(){

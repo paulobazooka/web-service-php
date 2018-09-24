@@ -30,14 +30,26 @@ if(file_get_contents("php://input")){
     $dados = file_get_contents("php://input");
     $sol = json_decode($dados);
 
-    $solicitacao = new Solicitacao($sol->datasolicitacao, $sol->latitude, $sol->longitude, $sol->tipo, $sol->comentario, $sol->foisolucionado, $sol->usuarioid);
+    date_default_timezone_set('America/Sao_Paulo');
+    $dat = date('Y-m-d H:i');
 
-    echo $solicitacaoDao->solicitacaoSave($solicitacao);
+    $solicitacao = new Solicitacao($dat, $sol->latitude, $sol->longitude, $sol->tipo, $sol->comentario, $sol->foisolucionado, $sol->usuarioid);
+
+    $con = new Conexao();
+    $solicitacaoDao = new SolicitacaoDao($con->getConexao());
+
+    $result = $solicitacaoDao->solicitacaoSave($solicitacao);
+
+    if($result){
+        echo $result;
+    }else{
+        echo false;
+    }
 }
 
 
 if(isset($_PUT["*"])){
-    echo "PUT Solictação <br>";
+    echo "PUT Solicitação <br>";
 }
 
 

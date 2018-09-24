@@ -7,6 +7,10 @@
  */
 
 
+include_once "../model/Solicitacao.php";
+include_once "../conexao/Conexao.php";
+
+
 class SolicitacaoDao
 {
     /**
@@ -42,6 +46,11 @@ class SolicitacaoDao
 
     public function solicitacaoSave(Solicitacao $solicitacao){
 
+        header("Access-Control-Allow-Origin: *");
+        header('Cache-Control: no-cache, must-revalidate');
+        header("Content-Type: text/plain; charset=UTF-8");
+
+
         try {
             $this->con->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
 
@@ -69,7 +78,7 @@ class SolicitacaoDao
 
                     $this->con->commit();
 
-                    return json_encode("solicitação","inserida");
+                    return true;
 
                 }catch (PDOException $e){
                     $this->con->rollback();
