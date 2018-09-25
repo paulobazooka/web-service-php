@@ -1,9 +1,5 @@
 <?php 
-    include_once "model/Solicitacao.php";
-    include_once "model/Usuario.php";
-    include_once "conexao/Conexao.php";
-    include_once "repositories/UsuarioDao.php";
-    include_once "model/Mensagem.php";
+
 ?>
 
 <?php 

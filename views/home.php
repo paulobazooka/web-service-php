@@ -1,0 +1,89 @@
+<?php
+/**
+ * Created by PhpStorm.
+ * User: bianquezi
+ * Date: 25/09/18
+ * Time: 19:23
+ */
+
+    if(isset($_SESSION['user'])){
+
+    }else{
+       // header("location:index.php");
+    }
+
+?>
+
+<!-- Compiled and minified CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<!-- Compiled and minified JavaScript -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+<div class="col s12">
+    <div class="">
+        <div class="center">
+            <h4 class="title grey-text">Olhar Cidadão</h4>
+        </div>
+    </div>
+</div>
+
+
+<div class="col s12">
+    <div class="">
+        <div class="center">
+            <h5 class="title grey-text">Minhas Solicitações</h5>
+            <div>
+                <?php
+
+                    if(isset($_POST['dados'])){
+
+                        foreach (array_expression as $value){
+                            echo '<label></label> <label></label> <label></label>';
+                        }
+                    }
+
+                ?>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="col s12">
+    <div class="row">
+        <div class="col s6">
+            <h5 class="title grey-text">Nova Solicitação</h5>
+            <div class="card">
+                <form action="#" method="post">
+                    <div class="input">
+                        <label for="userid">Código</label>
+                        <input type="text" name="userid" id="userid">
+                    </div>
+                    <div class="input">
+                        <label for="tipo">Tipo</label>
+                        <input type="text" name="tipo" id="tipo">
+                    </div>
+                    <div class="input">
+                        <label for="desc">Comentário</label>
+                        <input type="text" name="com" id="com">
+                    </div>
+                    <div class="input">
+                        <label for="lat">Latitude</label>
+                        <input type="text" name="lat" id="lat">
+                    </div>
+                    <div class="input">
+                        <label for="lng">Longitude</label>
+                        <input type="text" name="lng" id="lng">
+                    </div>
+                    <div class="input">
+                        <div>
+                            <input type="reset" value="LIMPAR" class="btn orange">
+                            <input type="submit" value="ENVIAR" class="btn green">
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
