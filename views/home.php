@@ -27,7 +27,7 @@ include_once "../conexao/Conexao.php";
         }
 
     }else{
-        header("location:index.php");
+        header("location:login.php");
     }
 
 ?>
