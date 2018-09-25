@@ -19,38 +19,19 @@
 <!-- Compiled and minified JavaScript -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 
+<link rel="stylesheet" href="./css/home.css">
 
-<div class="col s12">
-    <div class="">
-        <div class="center">
-            <h4 class="title grey-text">Olhar Cidadão</h4>
-        </div>
-    </div>
-</div>
-
-
-<div class="col s12">
-    <div class="">
-        <div class="center">
-            <h5 class="title grey-text">Minhas Solicitações</h5>
-            <div>
-                <?php
-
-                    if(isset($_POST['dados'])){
-
-                        foreach (array_expression as $value){
-                            echo '<label></label> <label></label> <label></label>';
-                        }
-                    }
-
-                ?>
-            </div>
-        </div>
-    </div>
-</div>
+<nav>
+    <div class="nav-wrapper grey darken-4">
+        <a href="#" class="brand-logo">Olhar Cidadão</a>
+        <ul id="nav-mobile" class="right hide-on-med-and-down">
+            <li><a href="#">Logout</a></li>
+        </ul>
+  </div>
+</nav>
 
 
-<div class="col s12">
+<div class="col s12 content-margin">
     <div class="row">
         <div class="col s6">
             <h5 class="title grey-text">Nova Solicitação</h5>
@@ -77,12 +58,31 @@
                         <input type="text" name="lng" id="lng">
                     </div>
                     <div class="input">
-                        <div>
+                        <div class="col s12 forms-buttons">
                             <input type="reset" value="LIMPAR" class="btn orange">
                             <input type="submit" value="ENVIAR" class="btn green">
                         </div>
                     </div>
                 </form>
+            </div>
+        </div>
+        <div class="col s6">
+            <div class="">
+                <div class="center">
+                    <h5 class="title grey-text">Minhas Solicitações</h5>
+                    <div>
+                        <?php
+
+                            if(isset($_POST['dados'])){
+
+                                foreach (array_expression as $value){
+                                    echo '<label></label> <label></label> <label></label>';
+                                }
+                            }
+
+                        ?>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
