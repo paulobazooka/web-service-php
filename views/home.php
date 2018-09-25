@@ -5,15 +5,35 @@
  * Date: 25/09/18
  * Time: 19:23
  */
+include_once "../model/Usuario.php";
+include_once "../repositories/UsuarioDao.php";
+include_once "../repositories/SolicitacaoDao.php";
+include_once "../conexao/Conexao.php";
 
-    if(isset($_SESSION['user'])){
+
+    if(isset($_POST['usrName']) && isset($_POST['password'])){
+
+        $username = $_POST['usrName'];
+
+        $con = new Conexao();
+        $usuarioDao = new UsuarioDao($con->getConexao($con));
+
+      //  $result = $usuarioDao->usuarioFindByEmail($username);
+
+        if($result){
+         //   header("location:login.php");
+        }else{
+          //  echo $result['email'];
+        }
 
     }else{
-       // header("location:index.php");
+        header("location:index.php");
     }
 
 ?>
 
+
+<html>
 <!-- Compiled and minified CSS -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 <!-- Compiled and minified JavaScript -->
@@ -34,8 +54,8 @@
         <div class="center">
             <h5 class="title grey-text">Minhas Solicitações</h5>
             <div>
-                <?php
-
+               <!-- --><?php
+/*
                     if(isset($_POST['dados'])){
 
                         foreach (array_expression as $value){
@@ -43,7 +63,7 @@
                         }
                     }
 
-                ?>
+                */?>
             </div>
         </div>
     </div>
@@ -87,3 +107,5 @@
         </div>
     </div>
 </div>
+
+</html>
