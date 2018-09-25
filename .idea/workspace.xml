@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="60b256c6-691a-42f5-9622-e8147ee107c8" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/views/css/home.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/views/home.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/home.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/views/login.php" beforeDir="false" afterPath="$PROJECT_DIR$/views/login.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -67,7 +67,7 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="php" value="13240" />
+          <entry key="php" value="13243" />
           <entry key="sql" value="20" />
           <entry key="txt" value="15" />
         </counts>
@@ -75,7 +75,7 @@
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="HTML" value="2" />
-          <entry key="PHP" value="13238" />
+          <entry key="PHP" value="13241" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="Scratch" value="20" />
         </counts>
@@ -119,8 +119,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/views/home.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+            <state relative-caret-position="255">
+              <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
             </state>
           </provider>
         </entry>
@@ -267,7 +267,7 @@
       <workItem from="1537825894654" duration="3529000" />
       <workItem from="1537880731423" duration="2177000" />
       <workItem from="1537883303151" duration="3059000" />
-      <workItem from="1537913968609" duration="3434000" />
+      <workItem from="1537913968609" duration="3624000" />
     </task>
     <servers />
   </component>
@@ -289,13 +289,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66988000" />
+    <option name="totallyTimeSpent" value="67178000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-1" width="1368" height="749" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.21060605" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21060605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -308,7 +308,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Database Changes" order="8" weight="0.32956383" />
       <window_info anchor="bottom" id="Version Control" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4969697" visible="true" weight="0.3231018" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="10" sideWeight="0.4969697" visible="true" weight="0.3231018" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5030303" side_tool="true" weight="0.3231018" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -427,8 +427,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/views/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
+        <state relative-caret-position="255">
+          <caret line="136" lean-forward="true" selection-start-line="136" selection-end-line="136" />
         </state>
       </provider>
     </entry>
