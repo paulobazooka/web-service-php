@@ -3,6 +3,7 @@
     include_once "model/Usuario.php";
     include_once "conexao/Conexao.php";
     include_once "repositories/UsuarioDao.php";
+    include_once "model/Mensagem.php";
 ?>
 
 <?php 
@@ -18,6 +19,12 @@
 
         $con = new Conexao();
     }*/
+
+
+    $mensagem = new Mensagem('teste', 'teste', 'teste');
+
+    $mensagem->enviarMensagem();
+
 
    echo "<h3>Web Service Olhar Cidadão</h3><br>";
    echo "<label>Autores:</label><br>";
