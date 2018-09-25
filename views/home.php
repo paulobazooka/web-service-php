@@ -47,7 +47,7 @@ include_once "../conexao/Conexao.php";
     <div class="nav-wrapper grey darken-4">
         <a href="#" class="brand-logo">Olhar Cidadão</a>
         <ul id="nav-mobile" class="right hide-on-med-and-down">
-            <li><a href="#">Logout</a></li>
+            <li><a href="login.php">Logout</a></li>
         </ul>
     </div>
 </nav>
