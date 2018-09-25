@@ -3,65 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="60b256c6-691a-42f5-9622-e8147ee107c8" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/LICENSE" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/SECURITY.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/VERSION" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/get_oauth_token.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-am.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ar.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-az.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ba.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-be.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-bg.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ca.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ch.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-cs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-da.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-de.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-el.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-eo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-es.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-et.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-fa.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-fi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-fo.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-fr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-gl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-he.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-hi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-hr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-hu.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-id.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-it.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ja.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ka.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ko.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-lt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-lv.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ms.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-nb.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-nl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-pl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-pt.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-pt_br.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ro.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-rs.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-ru.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-sk.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-sl.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-sv.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-tr.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-uk.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-vi.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-zh.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/language/phpmailer.lang-zh_cn.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/Exception.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/OAuth.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/PHPMailer.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/POP3.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/SMTP.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/model/Mensagem.php" beforeDir="false" afterPath="$PROJECT_DIR$/model/Mensagem.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +34,7 @@
     <session id="438216672">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="19" />
           <entry key="project.open.time.11" value="1" />
           <entry key="project.open.time.17" value="1" />
           <entry key="project.open.time.18" value="1" />
@@ -103,10 +45,10 @@
           <entry key="project.open.time.42" value="3" />
           <entry key="project.open.time.43" value="2" />
           <entry key="project.open.time.48" value="1" />
-          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.49" value="2" />
           <entry key="project.open.time.50" value="1" />
           <entry key="project.open.time.51" value="2" />
-          <entry key="project.opened" value="19" />
+          <entry key="project.opened" value="20" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
@@ -125,14 +67,14 @@
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="5" />
-          <entry key="php" value="12087" />
+          <entry key="php" value="12091" />
           <entry key="sql" value="20" />
           <entry key="txt" value="15" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="PHP" value="12087" />
+          <entry key="PHP" value="12091" />
           <entry key="PLAIN_TEXT" value="20" />
           <entry key="Scratch" value="20" />
         </counts>
@@ -146,7 +88,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/model/Mensagem.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="80">
@@ -158,7 +100,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/repositories/UsuarioDao.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1016">
+            <state relative-caret-position="1840">
               <caret line="122" column="9" selection-start-line="89" selection-start-column="7" selection-end-line="122" selection-end-column="9" />
             </state>
           </provider>
@@ -173,11 +115,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            <state relative-caret-position="192">
+              <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
             </state>
           </provider>
         </entry>
@@ -208,8 +150,8 @@
         <option value="$PROJECT_DIR$/repositories/UsuarioDao.php" />
         <option value="$PROJECT_DIR$/repositories/SolicitacaoDao.php" />
         <option value="$PROJECT_DIR$/solicitacao.php" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/model/Mensagem.php" />
+        <option value="$PROJECT_DIR$/index.php" />
       </list>
     </option>
   </component>
@@ -234,6 +176,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -261,7 +204,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -326,7 +268,8 @@
       <workItem from="1537568864292" duration="7573000" />
       <workItem from="1537825894654" duration="3529000" />
       <workItem from="1537880731423" duration="2177000" />
-      <workItem from="1537883303151" duration="2596000" />
+      <workItem from="1537883303151" duration="3059000" />
+      <workItem from="1537913968609" duration="24000" />
     </task>
     <servers />
   </component>
@@ -348,13 +291,13 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="63091000" />
+    <option name="totallyTimeSpent" value="63578000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="744" extended-state="6" />
+    <frame x="-1" y="-1" width="1368" height="749" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.20757575" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.21060605" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -447,21 +390,18 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/SMTP.php">
+    <entry file="file://$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/SMTP.php" />
+    <entry file="file://$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/PHPMailer.php" />
+    <entry file="file://$PROJECT_DIR$/model/Mensagem.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4790" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/aux/PHPMailer-6.0.5/src/PHPMailer.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="723" column="51" lean-forward="true" selection-start-line="723" selection-start-column="51" selection-end-line="723" selection-end-column="51" />
+        <state relative-caret-position="80">
+          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/repositories/UsuarioDao.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1016">
+        <state relative-caret-position="1840">
           <caret line="122" column="9" selection-start-line="89" selection-start-column="7" selection-end-line="122" selection-end-column="9" />
         </state>
       </provider>
@@ -475,15 +415,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/model/Mensagem.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
+        <state relative-caret-position="192">
+          <caret line="23" column="3" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="3" />
         </state>
       </provider>
     </entry>

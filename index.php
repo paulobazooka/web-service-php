@@ -21,9 +21,9 @@
     }*/
 
 
-    $mensagem = new Mensagem('teste', 'teste', 'teste');
+ //   $mensagem = new Mensagem('teste', 'teste', 'teste');
 
-    $mensagem->enviarMensagem();
+   // $mensagem->enviarMensagem();
 
 
    echo "<h3>Web Service Olhar Cidadão</h3><br>";
